@@ -135,3 +135,22 @@ $data = json_decode($response, true);
 ```
 
 ---
+## Teams and Seats
+
+### Overview
+The Teams and Seats feature allows administrators to manage user collaboration within teams. Administrators can set the maximum number of seats based on pricing plans and assign roles to team members.
+
+### Features
+- **Create Teams**: Admins can create teams and assign users.
+- **Manage Seats**: Assign roles such as "view" or "edit" to team members.
+- **Pricing Plan Integration**: Limit the number of seats based on the active pricing plan.
+- **Permissions**: Control access to features based on user roles within a team.
+
+### Admin Settings
+To configure the maximum number of seats for each pricing plan, navigate to the Admin Settings page and update the "Max Seats per Plan" field.
+
+### API Endpoints
+- **Create Team**: `POST /php/create_team.php`
+- **Add User to Team**: `POST /php/add_user_to_team.php`
+- **Remove User from Team**: `POST /php/remove_user_from_team.php`
+- **Update Admin Settings**: `POST /php/admin_settings_update.php`
