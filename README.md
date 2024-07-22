@@ -1,4 +1,5 @@
-# PricePrize
+# PricePrize (Main codes/repo will be uploaded soon. star this project to keep an eye on the development. we are building this as somwthing you can deploy as your own startup)
+
 A pricing iteration, forecasting and experimentation tool for startups written in php.
 
 Certainly! Here’s a GitHub README text based on the detailed explanation:
