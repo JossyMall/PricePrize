@@ -81,4 +81,57 @@ Suppose you run a SaaS company offering cloud storage. Noticing high subscriptio
 
 By following these steps, you can effectively utilize our platform to iterate and enhance your pricing strategies with data-driven insights.
 
+Certainly! Here’s a brief GitHub README section for **Grandfathering** and **API Key Management** features of your software:
 
+---
+
+## **Features Overview**
+
+### **Grandfathering**
+
+**Grandfathering** is a powerful feature of our software that allows you to maintain existing customers on their current pricing plans even when you introduce new pricing structures. This ensures that long-time customers are not negatively impacted by changes and helps retain their loyalty.
+
+#### **Key Benefits:**
+- **Customer Retention:** Protects existing customers from price increases or changes.
+- **Seamless Transition:** Allows for smooth updates to pricing models while honoring legacy agreements.
+- **Flexible Management:** Easily manage grandfathered pricing plans alongside new pricing structures.
+
+**How It Works:**
+When you introduce new pricing plans, existing customers are automatically retained on their current plan, ensuring they continue to pay the same amount as before. New customers will see and be charged according to the updated pricing structure.
+
+---
+
+### **API Key Management**
+
+Our **API Key Management** feature provides a secure and flexible way for users to integrate our software’s pricing and billing functionalities into their own systems. Users can generate, manage, and use API keys to interact with our platform programmatically.
+
+#### **Key Benefits:**
+- **Programmatic Access:** Enables integration with external systems and automation of tasks.
+- **Dynamic Updates:** Fetch and manage pricing data in real-time from your applications.
+- **Secure Interaction:** Use API keys to authenticate and interact with our platform securely.
+
+**How It Works:**
+- **Generate API Keys:** Users can create API keys from the API Key Management page. Each key is uniquely generated and linked to the user's account.
+- **Use API Keys:** Incorporate the API key in HTTP requests to authenticate and access various endpoints of our API.
+- **Manage Keys:** Users can view, regenerate, or revoke API keys through the management interface.
+
+**Example Usage:**
+```php
+// Example PHP code to use API key
+$apiKey = 'user-generated-api-key';
+$apiUrl = 'https://yourPricePrize.com/api/endpoint';
+
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_URL, $apiUrl);
+curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+    'Authorization: Bearer ' . $apiKey
+));
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+$response = curl_exec($ch);
+curl_close($ch);
+
+$data = json_decode($response, true);
+// Process the response data
+```
+
+---
